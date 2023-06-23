@@ -1,16 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+:root {
+  --stage1: #f02cf1;
+  --stage2: #fba200;
+  --stage3: #067fc3;
+  --stage4: #6922c3;
+  --stage5: #ed5030;
+  --progress-fill: #49eb14;
+  --progress-empty: #e0e0e0;
+  --black: #303030;
+  --bg: #f6f7fb;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
   margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 50px;
 }
