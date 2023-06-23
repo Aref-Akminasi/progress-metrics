@@ -6,11 +6,17 @@
   --stage3: #067fc3;
   --stage4: #6922c3;
   --stage5: #ed5030;
-  --progress-fill: #49eb14;
+  --progress-fill: #45d715;
   --progress-empty: #e0e0e0;
   --black: #303030;
   --white: #fff;
   --bg: #f6f7fb;
+
+  --stage1-hover: #e229e2;
+  --stage2-hover: #e79604;
+  --stage3-hover: #0c6fa7;
+  --stage4-hover: #5010a0;
+  --stage5-hover: #d83b1b;
 }
 
 * {
@@ -55,10 +61,16 @@ h1 {
   height: 65px;
   border-radius: 50%;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .stage1 {
   background-color: var(--stage1);
+  transition: background-color 0.3s ease-in;
+}
+
+.stage1:hover {
+  background-color: var(--stage1-hover);
 }
 
 .stage2 {
@@ -66,6 +78,11 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
+  transition: background-color 0.3s ease-in;
+}
+
+.stage2:hover {
+  background-color: var(--stage2-hover);
 }
 
 .stage3 {
@@ -73,6 +90,11 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
+  transition: background-color 0.3s ease-in;
+}
+
+.stage3:hover {
+  background-color: var(--stage3-hover);
 }
 
 .stage4 {
@@ -80,6 +102,11 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
+  transition: background-color 0.3s ease-in;
+}
+
+.stage4:hover {
+  background-color: var(--stage4-hover);
 }
 
 .stage5 {
@@ -87,6 +114,11 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
+  transition: background-color 0.3s ease-in;
+}
+
+.stage5:hover {
+  background-color: var(--stage5-hover);
 }
 
 .progress-empty {
@@ -97,14 +129,16 @@ h1 {
   height: 20px;
   top: 50%;
   transform: translateY(-50%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .progress-fill {
   position: absolute;
   z-index: -1;
-  width: 50%;
+  width: 0%;
   background-color: var(--progress-fill);
   height: 20px;
   top: 50%;
   transform: translateY(-50%);
+  transition: width 0.3s ease-in;
 }
