@@ -37,6 +37,7 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
   margin-top: 50px;
+  font-size: 36px;
 }
 
 .progress-container {
@@ -66,7 +67,7 @@ h1 {
 
 .stage1 {
   background-color: var(--stage1);
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .stage1:hover {
@@ -78,7 +79,7 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .stage2:hover {
@@ -90,7 +91,7 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .stage3:hover {
@@ -102,7 +103,7 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .stage4:hover {
@@ -114,7 +115,7 @@ h1 {
   border: solid;
   border-color: var(--white);
   border-width: 3px;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .stage5:hover {
@@ -141,4 +142,78 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   transition: width 0.3s ease-in;
+}
+
+h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.content-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+}
+
+.image-container {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-container img {
+  height: 363px;
+  margin-right: 120px;
+}
+
+.text-container {
+  width: 50vw;
+  max-width: 585px;
+  text-align: justify;
+}
+
+.stage1-content {
+  display: flex;
+}
+
+.stage1-content h2 {
+  color: var(--stage1);
+}
+
+.stage2-content {
+  display: none;
+}
+
+.stage2-content h2 {
+  color: var(--stage2);
+}
+
+.stage3-content {
+  display: none;
+}
+
+.stage3-content h2 {
+  color: var(--stage3);
+}
+
+.stage4-content {
+  display: none;
+}
+
+.stage4-content h2 {
+  color: var(--stage4);
+}
+.stage5-content {
+  display: none;
+}
+
+.stage5-content h2 {
+  color: var(--stage5);
 }
