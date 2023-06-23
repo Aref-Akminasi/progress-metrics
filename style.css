@@ -9,6 +9,7 @@
   --progress-fill: #49eb14;
   --progress-empty: #e0e0e0;
   --black: #303030;
+  --white: #fff;
   --bg: #f6f7fb;
 }
 
@@ -30,4 +31,80 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
   margin-top: 50px;
+}
+
+.progress-container {
+  width: 725px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.stages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.stage1 {
+  background-color: var(--stage1);
+}
+
+.stage2 {
+  background-color: var(--stage2);
+  border: solid;
+  border-color: var(--white);
+  border-width: 3px;
+}
+
+.stage3 {
+  background-color: var(--stage3);
+  border: solid;
+  border-color: var(--white);
+  border-width: 3px;
+}
+
+.stage4 {
+  background-color: var(--stage4);
+  border: solid;
+  border-color: var(--white);
+  border-width: 3px;
+}
+
+.stage5 {
+  background-color: var(--stage5);
+  border: solid;
+  border-color: var(--white);
+  border-width: 3px;
+}
+
+.progress-empty {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  background-color: var(--progress-empty);
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.progress-fill {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  background-color: var(--progress-fill);
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
