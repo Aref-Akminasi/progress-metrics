@@ -62,7 +62,9 @@ h1 {
   height: 65px;
   border-radius: 50%;
   cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(
+    0px 4px 4px rgba(0, 0, 0, 0.25)
+  ); /*Using RGBA do define the opacity using the 'Alpha' value*/
 }
 
 .stage1 {
@@ -150,6 +152,7 @@ h2 {
   font-size: 32px;
   margin: 0;
 }
+
 p {
   font-weight: 400;
   font-size: 14px;
@@ -179,41 +182,42 @@ p {
   text-align: justify;
 }
 
-.stage1-content {
-  display: flex;
-}
-
 .stage1-content h2 {
   color: var(--stage1);
-}
-
-.stage2-content {
-  display: none;
 }
 
 .stage2-content h2 {
   color: var(--stage2);
 }
 
-.stage3-content {
+.stage3-content h2 {
+  color: var(--stage3);
+}
+
+.stage4-content h2 {
+  color: var(--stage4);
+}
+
+.stage5-content h2 {
+  color: var(--stage5);
+}
+
+.stage1-content {
+  display: flex;
+}
+
+.stage2-content {
   display: none;
 }
 
-.stage3-content h2 {
-  color: var(--stage3);
+.stage3-content {
+  display: none;
 }
 
 .stage4-content {
   display: none;
 }
 
-.stage4-content h2 {
-  color: var(--stage4);
-}
 .stage5-content {
   display: none;
-}
-
-.stage5-content h2 {
-  color: var(--stage5);
 }
