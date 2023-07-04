@@ -162,7 +162,7 @@ p {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  margin-top: 150px;
+  margin: 150px 50px 0 50px;
 }
 
 .image-container {
@@ -220,4 +220,71 @@ p {
 
 .stage5-content {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    margin-top: 75px;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .image-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container img {
+    height: 363px;
+    margin-right: 0;
+  }
+  .text-container {
+    margin-top: 75px;
+    width: auto;
+    max-width: 800px;
+    text-align: justify;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .progress-container {
+    transform: rotate(90deg);
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+    position: relative;
+  }
+
+  .icon {
+    transform: rotate(270deg);
+  }
+
+  h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .image-container img {
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
 }
