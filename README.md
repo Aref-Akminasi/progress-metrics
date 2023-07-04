@@ -82,7 +82,7 @@ Moreover, I believe it would be ideal for projects like this to store the conten
 
 ## Author
 
-Aref Akminasi
+**Aref Akminasi**
 
 - LinkedIn - [Aref Akminasi](https://www.linkedin.com/in/aref-akminasi-91412b207/)
 - Twitter - [@aref_akminasi](https://twitter.com/aref_akminasi)
