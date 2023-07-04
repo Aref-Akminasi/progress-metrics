@@ -14,7 +14,6 @@ This is a self-taught and self-built project. I was inspired by the idea of swit
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,7 +25,7 @@ Users should be able to:
 - View hover states for the interactive elements on the page.
 - Read content and view pictures associated with each stage.
 
-### Screenshot
+### Screenshots
 
 ![](/screenshots/screenshot1.png)
 ![](/screenshots/screenshot2.png)
@@ -39,66 +38,51 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5
+- CSS3
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+What was challenging was having multiple elements that needed to be updated based on the status, as everything happens within one function. I have chosen not to split it into multiple functions because I believe that the entire project is an integrated unit and should be updated together. This unity of the project ensures that all elements stay synchronized and up to date.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```js
+function updateProgress() {
+  //Updating the progress bar
+  progressBar.style.width = (currentIdx / (stages.length - 1)) * 100 + '%'; //Here should stages.length decremented by 1, because the steps between the 5 stages are 4.
+  //Updating the stages border
+  stages.forEach((stage, idx) => {
+    idx <= currentIdx
+      ? (stage.style.border = 'none')
+      : (stage.style.border = 'solid' + borderColor);
+  });
+  //Updating the stage content
+  stages.forEach((stage, idx) => {
+    document.querySelector('.stage' + (idx + 1) + '-content').style.display = //First, display:none; for all stages
+      'none';
+  });
+  document.querySelector(
+    //Seconnd, display that particular stage (the stage that is clicked on)
+    '.stage' + (currentIdx + 1) + '-content'
+  ).style.display = 'flex';
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Based on my observations, I found it quite challenging to incorporate all the content into HTML while trying to mimic a React component. In the future, when I learn React, I will look back and compare what I have built with the functionality of a React component.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Moreover, I believe it would be ideal for projects like this to store the content in a JSON file, simulating the process of fetching content from the backend. This is because directly embedding content into HTML is not considered best practice. I am looking forward to researching how to achieve this using JSON.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Love Pik](https://lovepik.com/) - This is the website from which I obtained the assets for this project, including the images for the stages. Attribution is not required for these assets. However, it is a valuable tool that offers a wide range of samples, making it a handy resource.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+Aref Akminasi
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- LinkedIn - [Aref Akminasi](https://www.linkedin.com/in/aref-akminasi-91412b207/)
+- Twitter - [@aref_akminasi](https://twitter.com/aref_akminasi)

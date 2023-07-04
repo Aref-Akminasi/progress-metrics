@@ -9,7 +9,6 @@ stages.forEach((stage, idx) => {
     currentIdx = idx;
     //After a stage is clicked the current stage var is updated and based on that stage the progress bar, stages border and stages content should be updated as well
     updateProgress();
-    updateContent();
   });
 });
 
@@ -22,9 +21,6 @@ function updateProgress() {
       ? (stage.style.border = 'none')
       : (stage.style.border = 'solid' + borderColor);
   });
-}
-
-function updateContent() {
   //Updating the stage content
   stages.forEach((stage, idx) => {
     document.querySelector('.stage' + (idx + 1) + '-content').style.display = //First, display:none; for all stages
