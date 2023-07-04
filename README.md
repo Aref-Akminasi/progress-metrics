@@ -1,6 +1,6 @@
 # Progress metrics
 
-This is a self-taught and self-built project. I was inspired by the idea of switching the content of a page depending on the current stage of a timeline or a progress bar. The component I built can be used to demonstrate the stages of a project or as a timeline for an event.
+This is a self-designed and self-built project. I was inspired by the idea of switching the content of a page depending on the current stage of a timeline or a progress bar. The component I built can be used to demonstrate the stages of a project or as a timeline for an event.
 
 ## Table of contents
 
