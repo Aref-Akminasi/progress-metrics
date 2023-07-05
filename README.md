@@ -5,8 +5,8 @@ This is a self-designed and self-built project. I was inspired by the idea of sw
 ## Table of contents
 
 - [Overview](#overview)
-  - [Functionality](#the-challenge)
-  - [Screenshots](#screenshot)
+  - [Functionality](#functionality)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -17,7 +17,7 @@ This is a self-designed and self-built project. I was inspired by the idea of sw
 
 ## Overview
 
-### The challenge
+### Functionality
 
 Users should be able to:
 
